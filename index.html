@@ -15,8 +15,8 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1>My Local Favorites</h1>
-            <p class="subtitle">Track your favorite places around town</p>
+            <h1>My Favorite Bass Guitars</h1>
+            <p class="subtitle">Track your favorite basses</p>
         </div>
     </header>
 
@@ -30,8 +30,12 @@
 
                 <!-- Name Input -->
                 <div class="form-group">
-                    <label for="name">Place Name *</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter place name"
+                    <label for="name">Brand *</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter brand name"
+                        aria-required="true"></div>
+                        <div>
+                    <label for="model">Model *</label>
+                    <input type="text" id="model" name="model" required placeholder="Enter model name"
                         aria-required="true">
                 </div>
 
@@ -40,12 +44,12 @@
                     <label for="category">Category *</label>
                     <select id="category" name="category" required aria-required="true">
                         <option value="">-- Select Category --</option>
-                        <option value="coffee">Coffee Shop</option>
-                        <option value="restaurants">Restaurant</option>
-                        <option value="parks">Park</option>
-                        <option value="entertainment">Entertainment</option>
-                        <option value="study-spots">Study Spot</option>
-                        <option value="fitness">Fitness</option>
+                        <option value="four-string-elect">4-String Electric</option>
+                        <option value="five-string-elect">5-String Electric</option>
+                        <option value="four-string-semi">4-String Semi-Acoustic</option>
+                        <option value="five-string-semi">5-String Semi-Acoustic</option>
+                        <option value="four-string-eub">4-String EUB</option>
+                        <option value="five-string-eub">5-String EUB</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
@@ -81,14 +85,14 @@
             <div class="search-controls">
                 <input type="text" id="search-input" placeholder="Search favorites..." aria-label="Search favorites">
                 <select id="category-filter" aria-label="Filter by category">
-                    <option value="all">All Categories</option>
-                    <option value="coffee">Coffee Shop</option>
-                    <option value="restaurants">Restaurant</option>
-                    <option value="parks">Park</option>
-                    <option value="entertainment">Entertainment</option>
-                    <option value="study-spots">Study Spot</option>
-                    <option value="fitness">Fitness</option>
-                    <option value="other">Other</option>
+                <option value="">-- Select Category --</option>
+                        <option value="four-string-elect">4-String Electric</option>
+                        <option value="five-string-elect">5-String Electric</option>
+                        <option value="four-string-semi">4-String Semi-Acoustic</option>
+                        <option value="five-string-semi">5-String Semi-Acoustic</option>
+                        <option value="four-string-eub">4-String EUB</option>
+                        <option value="five-string-eub">5-String EUB</option>
+                        <option value="other">Other</option>
                 </select>
             </div>
         </section>
@@ -96,8 +100,8 @@
 <section class="favorites-section">
     <div id="favorites-list" class="favorites-grid">
         <!-- JavaScript will add favorite cards here -->
-        <!-- For now, add placeholder message -->
-        <p class="empty-message">No favorites yet. Add your first favorite place above!</p>
+        
+        <p class="empty-message">No favorites yet. Add your first favorite bass above!</p>
     </div>
 </section>
 
