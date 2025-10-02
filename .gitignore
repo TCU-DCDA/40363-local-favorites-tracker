@@ -1,0 +1,16 @@
+# Practice folder
+practice/
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+
+# Node
+node_modules/
+package-lock.json
+
+# Logs
+*.log
